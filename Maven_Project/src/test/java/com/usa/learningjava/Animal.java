@@ -11,7 +11,6 @@ public class Animal {
 		//here salary = signature
 		// only signatur (no body/coding) = abstract method
 	}
-	
 	//signature can not be the same = use income instead
 	//method name here = static (void)
 public static void income() {
