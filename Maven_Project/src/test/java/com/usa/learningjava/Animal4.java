@@ -6,11 +6,25 @@ public class Animal4 {
 	
 	public void getsalary(int a) {
 		System.out.println("This is void method");
-		//use any variable (change parameter)
+		//use any variable (inside parameter)
 	}
 	
-	public void getsalary(int a, int b) {
+	public void getsalary(int a, double b) {
 		System.out.println("This is another void method");
+		//use any variable (but change parameter)
+		
 	}
+	
+	public void getsalary(double b, int a) {
+		System.out.println("This is another void method");
+	
+	//How to change the parameter?
+	
+		// 1. Change the number of the parameter.
+		// 2. Change the data type of the parameter.
+		// 3. Change the position of the parameter with different data type.
+	
+	//This is called Overloading
+}
 	
 }
