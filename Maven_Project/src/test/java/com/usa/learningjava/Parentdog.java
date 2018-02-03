@@ -12,8 +12,9 @@ public class Parentdog {
 		
 		//Math - 10+20=30
 		int a=10;
-		int b=20;
-		System.out.println(a+b);
+		int b=30;
+		int c=(a+b);
+		System.out.println(c=a+b);
 	}
 
 }
