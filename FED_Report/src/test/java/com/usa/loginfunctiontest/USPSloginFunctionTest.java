@@ -53,6 +53,11 @@ public class USPSloginFunctionTest {
 		//Click login
 		driver.findElement(By.xpath(".//*[@id='submitBtn']")).click();
 		
+		//To close the WebDriver
+		driver.quit();
+		
+		System.out.println("Test passed");
+		
 	}
 
 }
