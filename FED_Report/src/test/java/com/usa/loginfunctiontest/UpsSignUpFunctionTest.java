@@ -35,10 +35,8 @@ public class UpsSignUpFunctionTest {
 		driver.findElement(By.xpath(".//*[@id='ups-user_password_input']")).sendKeys("Upspass123$");;
 		
 		//Click Check Box
-		//driver.findElement(By.xpath(".//*[@id='ups-checkbox_group']/div/label")).click();
-		
-		driver.findElement(By.className("ng-hide"));
-						
+		driver.findElement(By.xpath(".//*[@id='ups-checkbox_group']/div/label")).click();
+				
 		//Click Sign Up
 		driver.findElement(By.xpath(".//*[@id='SignupDiv']/div[1]/div/div/div[2]/div[2]/form/div[4]/div/button")).click();
 		
