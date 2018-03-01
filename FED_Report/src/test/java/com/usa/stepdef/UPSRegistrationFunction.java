@@ -3,6 +3,7 @@ package com.usa.stepdef;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -10,8 +11,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class UpsSignUPFunction {
-	
+public class UPSRegistrationFunction {
 	
 WebDriver driver;
 	
@@ -34,18 +34,19 @@ WebDriver driver;
 	    
 		driver.findElement(By.xpath(".//*[@id='ups-navItems']/ul/li[2]/a")).click();
 		
+	    
 	}
 
 	@When("^User able to put valid Name- Samin Masnun$")
 	public void user_able_to_put_valid_Name_Samin_Masnun() throws Throwable {
 	    
 		driver.findElement(By.xpath(".//*[@id='ups-full_name_input']")).sendKeys("Samin Masnun");;
-	    
+		
 	}
 
 	@When("^User able to put valid Email- saminmasnun@gmail\\.com$")
 	public void user_able_to_put_valid_Email_saminmasnun_gmail_com() throws Throwable {
-	    
+	   
 		driver.findElement(By.xpath(".//*[@id='ups-email_input']")).sendKeys("saminmasnun@gmail.com");;
 	    
 	}
@@ -54,26 +55,37 @@ WebDriver driver;
 	public void user_able_to_put_valid_User_ID_saminmasnun() throws Throwable {
 	    
 		driver.findElement(By.xpath(".//*[@id='ups-user_id_input']")).sendKeys("saminmasnun");;
-	    
+		
 	}
 
-	@When("^User able to put valid Password- Upspass123$(\\d+)$")
-	public void user_able_to_put_valid_Password_upspass(int arg1) throws Throwable {
+	@When("^User able to put valid Password- Upspass(\\d+)\\$$")
+	public void user_able_to_put_valid_Password_Upspass_$(int arg1) throws Throwable {
 	    
 		driver.findElement(By.xpath(".//*[@id='ups-user_password_input']")).sendKeys("Upspass123$");;
+	}
+
+	@When("^User able to click Check box link$")
+	public void user_able_to_click_Check_box_link() throws Throwable {
+	    
+		driver.findElement(By.xpath(".//*[@id='ups-checkbox_group']/div/label")).sendKeys(Keys.SPACE);
+	}
+
+	@When("^User able to click Sign Up button$")
+	public void user_able_to_click_Sign_Up_button() throws Throwable {
+	    
+		driver.findElement(By.xpath(".//*[@id='SignupDiv']/div[1]/div/div/div[2]/div[2]/form/div[4]/div/button")).sendKeys(Keys.SPACE);
 		
 	}
 
 	@Then("^Registration Successful$")
 	public void registration_Successful() throws Throwable {
-		
-		driver.findElement(By.xpath(".//*[@id='ups-checkbox_group']/div/label")).click();
-		
-		driver.findElement(By.xpath(".//*[@id='SignupDiv']/div[1]/div/div/div[2]/div[2]/form/div[4]/div/button")).click();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		driver.quit();
-		System.out.println("Test passed");
+		
+		System.out.println("Test Passed");
 	    
 	}
+
 
 }

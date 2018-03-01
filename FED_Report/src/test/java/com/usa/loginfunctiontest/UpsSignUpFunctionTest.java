@@ -3,6 +3,7 @@ package com.usa.loginfunctiontest;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -35,10 +36,12 @@ public class UpsSignUpFunctionTest {
 		driver.findElement(By.xpath(".//*[@id='ups-user_password_input']")).sendKeys("Upspass123$");;
 		
 		//Click Check Box
-		driver.findElement(By.xpath(".//*[@id='ups-checkbox_group']/div/label")).click();
+		driver.findElement(By.xpath(".//*[@id='ups-checkbox_group']/div/label")).sendKeys(Keys.SPACE);
 				
 		//Click Sign Up
-		driver.findElement(By.xpath(".//*[@id='SignupDiv']/div[1]/div/div/div[2]/div[2]/form/div[4]/div/button")).click();
+		
+		driver.findElement(By.xpath(".//*[@id='SignupDiv']/div[1]/div/div/div[2]/div[2]/form/div[4]/div/button")).sendKeys(Keys.SPACE);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		//To close the WebDriver
 		driver.quit();
