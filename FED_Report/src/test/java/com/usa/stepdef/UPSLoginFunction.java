@@ -29,7 +29,7 @@ public class UPSLoginFunction {
 	@When("^User Navigate to Login button link$")
 	public void user_Navigate_to_Login_button_link() throws Throwable {
 	    
-		driver.findElement(By.xpath(".//*[@id='ups-navItems']/ul/li[1]/a")).click();
+		driver.findElement(By.xpath(".//*[@id='ups-navItems']/ul[2]/li[1]/a")).click();
 	    
 	}
 

@@ -12,7 +12,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 	//	monochrome = true,
 	//dryRun=true,
 		features= {"src/main/resources/LoginFunctionTest.feature"},
-		glue= {"com.usa.stepdef"}
+		glue= {"com.usa.stepdef/src/test/java/com/usa/stepdef/UPSLoginFunction.java"}
 				
 		//,tags= {"@login"}
 		)

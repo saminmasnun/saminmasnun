@@ -30,18 +30,18 @@ public class USPSloginFunctionTest {
 		// Password: Ttech123$
 		
 		//But here App will take longer to work than the tool (because of slow net connection). 
-		//so we have to do synchronization
+		//so we hadriver.findElement(By.className("ups-analytics")).click();
+		//ups-analytics is from the HTML link from the App.
+		
+		//ve to do synchronization
 		//Here try implicit wait synchronization
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		//Now here Login is an object
 		//To find object> use locator 
 		//For Locator> Use findElement/ findElements
-		// driver.findElement(By.className("ups-analytics")).click();
-		//ups-analytics is from the HTML link from the App.
-		
-		//But it's better to use XPATH
-		driver.findElement(By.xpath(".//*[@id='ups-navItems']/ul/li[1]/a")).click();
+		// But it's better to use XPATH
+		driver.findElement(By.xpath(".//*[@id='ups-navItems']/ul[2]/li[1]/a")).click();
 		
 				
 		//Username
