@@ -5,14 +5,14 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class USPSloginFunctionTest {
 
 	public static void main(String[] args) {
 		// Step 1. Open browser
 		
-		System.setProperty("webdriver.chorome.driver", ".\\Driver\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		WebDriver driver = new FirefoxDriver();
 		// Webdriver = Interface
 		// driver = object
 		// FirefoxDriver/ChromeDriver = class
