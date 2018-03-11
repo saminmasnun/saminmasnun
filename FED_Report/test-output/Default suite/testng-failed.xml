@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.usa.runner.TestNGRunner">
+      <class name="com.usa.loginfunctiontest.CrossBrowserTesting">
         <methods>
-          <include name="setUpClass"/>
-          <include name="feature"/>
-          <include name="tearDownClass"/>
+          <include name="getbrowser"/>
         </methods>
-      </class> <!-- com.usa.runner.TestNGRunner -->
+      </class> <!-- com.usa.loginfunctiontest.CrossBrowserTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
