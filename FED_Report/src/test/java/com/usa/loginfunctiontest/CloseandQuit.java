@@ -9,7 +9,7 @@ public class CloseandQuit {
 		// TODO Auto-generated method stub
 
 		WebDriver driver = new FirefoxDriver();
-		driver.get("https://www.google.com.bd/");
+		driver.get("https://www.google.com/");
 		System.out.println("Done");
 		driver.quit();
 		
