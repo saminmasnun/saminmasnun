@@ -1,4 +1,4 @@
-package com.usa.loginfunctiontest;
+/*package com.usa.loginfunctiontest;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -46,3 +46,4 @@ public class CrossBrowserTesting {
 	
 }
 }
+*/
