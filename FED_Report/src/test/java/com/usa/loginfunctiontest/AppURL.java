@@ -1,4 +1,4 @@
-package com.usa.loginfunctiontest;
+/*package com.usa.loginfunctiontest;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -41,3 +41,4 @@ public class AppURL {
 	
 
 }
+*/

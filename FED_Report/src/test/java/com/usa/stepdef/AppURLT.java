@@ -1,4 +1,4 @@
-package com.usa.stepdef;
+/*package com.usa.stepdef;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -26,3 +26,4 @@ WebDriver driver;
 	}
 
 }
+*/
