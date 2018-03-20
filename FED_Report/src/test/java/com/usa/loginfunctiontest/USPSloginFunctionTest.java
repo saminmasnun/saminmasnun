@@ -1,4 +1,4 @@
-package com.usa.loginfunctiontest;
+/*package com.usa.loginfunctiontest;
 
 import java.util.concurrent.TimeUnit;
 
@@ -62,3 +62,4 @@ public class USPSloginFunctionTest {
 	}
 
 }
+*/

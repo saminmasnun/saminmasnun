@@ -1,5 +1,7 @@
 package com.usa.stepdef;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -23,6 +25,7 @@ public class UPSLoginFunction {
 	public void go_to_UPS_home_page() throws Throwable {
 	    
 		driver.navigate().to("https://www.ups.com/us/en/Home.page");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	    
 	}
 
